@@ -1,0 +1,16 @@
+<div id='container' class="bg-warning d-flex flex-column align-items-center vh-100 justify-content-center">
+  <div class="form-container bg-light rounded-3 d-flex flex-column align-items-center w-25 h-50 shadow">
+    <h1 class='p-4'>Stupid Coaching</h1>
+    <div class='w-100 text-center p-3'>
+      <p class='fw-bold'>Your question</p>
+      <%= @user_question %>
+    </div>
+    <div class='w-100 text-center p-3'>
+      <p class='fw-bold'>Coach Answer :</p>
+      <%= @answer_coach %>
+    </div>
+    <div id='button' class='p-3'>
+      <%= link_to "Back to question", "/ask", class:"btn btn-dark" %>
+    </div>
+  </div>
+</div>
